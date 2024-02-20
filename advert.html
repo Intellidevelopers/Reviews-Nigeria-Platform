@@ -18,6 +18,27 @@
 		
         <!-- Custom CSS -->
         <link href="assets/css/styles.css" rel="stylesheet">
+        <style>
+            .advert-card {
+          display: none;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: #f9f9f9;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          z-index: 9999;
+          width: 300px;
+          text-align: center;
+        }
+        
+        button {
+          margin-top: 20px;
+        }
+        </style>
 		
     </head>
 	
@@ -106,7 +127,7 @@
 			
 				
 				<div class="goodup-dashboard-content">
-					<div class="dashboard-tlbar d-block mb-5">
+					<div style="margin-left: 10px;" class="dashboard-tlbar d-block mb-5">
 						<div class="row">
 							<div class="colxl-12 col-lg-12 col-md-12">
 								<h1 class="ft-medium">Advertise</h1>
@@ -335,7 +356,12 @@
 										</div>
 									</div>
 									
-	
+                                    <!--Preview Card-->
+                                    <div class="advert-card" id="preview">
+                                      <a href="ad.html">
+                                        <button style="border: none;  padding: 10px; border-radius: 5px; background-color: red; color: white; width: 100px;">Preview</button>
+                                      </a>
+                                      </div>
 									
 									<!-- Amenties Options -->
 									<div class="dashboard-list-wraps bg-white rounded mb-4">
@@ -493,7 +519,7 @@
 												</div>
 												<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
 													<div class="form-group">
-														<button class="btn theme-bg rounded text-light">Submit & Preview</button>
+														<button class="btn theme-bg rounded text-light" id="preview-btn">Submit & Preview</button>
 													</div>
 												</div>
 											</div>
@@ -590,8 +616,21 @@
 			  }
 			};
 		</script>
+        <script>
+            const previewBtn = document.getElementById('preview-btn');
+        const previewCard = document.getElementById('preview');
+        
+        previewBtn.addEventListener('click', function() {
+          if (previewCard.style.display === 'none') {
+            previewCard.style.display = 'block';
+          } else {
+            previewCard.style.display = 'none';
+          }
+        });
+        </script>
 
 	</body>
 
 <!-- Mirrored from themezhub.net/goodup-live/goodup/add-listing.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Jan 2024 17:05:36 GMT -->
 </html>
+</head>
