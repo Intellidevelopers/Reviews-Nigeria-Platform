@@ -534,7 +534,7 @@ main
     border-radius: 20px;
     background-color: var(--field-color);
     width: 100%;
-    min-height: 160px;
+    min-height: 200px;
     height: 100%;
     position: relative;
 }
