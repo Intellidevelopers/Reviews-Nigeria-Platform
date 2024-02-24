@@ -271,7 +271,7 @@ html body .db {
 	color:#005536;
 }
 .trans-bg{
-	background:rgba(255,255,255,0.1); !important;
+	background:rgba(255,255,255,0.1) !important;
 }
 .theme-bg-light{
 	background:rgba(244, 27, 59,0.11) !important;
@@ -1175,7 +1175,7 @@ button.close {
     color:#F41b3b;
     cursor: pointer;
     background-color:transparent;
-    border-color#F41b3b;
+    border-color: #F41b3b;
 }
 
 .pagination li:first-child a {
@@ -5270,7 +5270,7 @@ ul.doc.ratting-view li i.filled {
 }
 .author-wrap-footer-ngh .jhk-list-inf-caption p {
     font-size: 13px;
-    color#70737d;
+    color: #70737d;
 }
 .author-wrap-ngh .online {
     position: absolute;
@@ -6679,13 +6679,13 @@ button.aps-clone {
 .dashboard-head-author-thumb {
     width: 130px;
     height: 130px;
-    border-radius: 50%;
+    border-radius: 10%;
     overflow: hidden;
     padding:5px;
     border:4px solid rgba(255,255,255,0.2);
 }
 .dashboard-head-author-thumb img {
-    border-radius: 50%;
+    border-radius: 10%;
     width: 100%;
     height: 100%;
     object-fit: contain;
