@@ -100,23 +100,55 @@
 			<!-- ============================================================== -->
 			<!-- Top header  -->
 			<!-- ============================================================== -->
+			<style>
+				/* Your existing styles here */
+			
+				@media (max-width: 768px) {
+			
+					.add-list-btn {
+						width: 45%;
+						font-size: 13px;
+						margin: 5px;	 /* Make the buttons take full width on smaller screens */
+					}
+			
+					.dashboard-head-author-clicl {
+						max-width: 100%; /* Adjust the maximum width for smaller screens */
+					}
+					.flex-container{
+						margin-left: 0px;
+					}
+					.add-list-btn.hidden{
+						display: none;
+					}
+			
+					/* Add any additional styles for smaller screens here */
+				}
+			</style>
 			
 			<!-- =============================== Dashboard Header ========================== -->
-			<section class="bg-cover position-relative" style="background:red url(assets/img/cover.jpg) no-repeat;" data-overlay="3">
-				<div class="abs-list-sec"><a href="dashboard-add-listing.html" class="add-list-btn"><i class="fas fa-plus me-2"></i>Add Listing</a></div>
+			<section class="bg-cover position-relative" style="background: red url(assets/img/cover.jpg) no-repeat;" data-overlay="3">
+				<div class="abs-list-sec">
+					<div class="flex-container">
+						<a href="/poll/strawpoll.com/create/index.html" class="add-list-btn"><i class="fas fa-poll me-2"></i>Create Poll</a>
+						<a href="dashboard-add-listing.html" class="add-list-btn"><i class="fas fa-sms me-2"></i>Send SMS</a>
+						<a href="dashboard-add-listing.html" class="add-list-btn"><i class="fas fa-list me-2"></i>Create Marketting List</a>
+						<a href="dashboard-add-listing.html" class="add-list-btn"><i class="fas fa-shopping-bag me-2"></i>Mystery Shopping  Task</a>
+						<a href="add-listing.html" class="add-list-btn  hidden"><i class="fas fa-plus me-2"></i>Add Listing</a>
+					</div>
+				</div>
+				
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-								
 							<div class="dashboard-head-author-clicl">
 								<div class="dashboard-head-author-thumb">
-									<img src="assets/img/t-7.png" class="img-fluid" alt="" />
+									<img src="assets/img/t-7.png" class="img-fluid" alt="">
 								</div>
 								<div class="dashboard-head-author-caption">
 									<div class="dashploio"><h4>Sablak Hotel</h4></div>
 									<div class="dashploio"><span class="agd-location"><i class="lni lni-map-marker me-1"></i>Challenge Ibadan, Oyo Nigeria</span></div>
 									<div class="listing-rating high"><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i></div>
-									
+			
 									<div class="Goodup-price-range">
 										<span class="ft-medium text-light">34 Reviews</span>
 									</div>
@@ -128,22 +160,12 @@
 											</div>
 										</div>
 									</div>
-
-									<div class="d-block mt-3">
-										<div class="list-lioe">
-											<div class="list-lioe-single"><a href="poll/strawpoll.com/create/index.html"><span class="ft-medium text-info"><i class="fas fa-poll me-1"></i>Create Poll</span></a></div>
-											<div class="list-lioe-single ms-2 ps-3 seperate">
-												<a href="javascript:void(0);" class="text-light ft-medium">Send SMS</a>
-												<a href="javascript:void(0);" class="text-light ft-medium ms-1">Create marketting list</a>
-												<a href="javascript:void(0);" class="text-light ft-medium ms-1">Launch Mystery Shopping Task</a>
-											</div>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<br><br><br><br><br>
 			</section>
 			<!-- =============================== Dashboard Header ========================== -->
 			
