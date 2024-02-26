@@ -1403,7 +1403,7 @@ button:disabled {
 .button.is-primary {
     --tw-bg-opacity: 1;
     --tw-text-opacity: 1;
-    background-color: rgb(79 70 229/var(--tw-bg-opacity));
+    background-color: red;
     border-color: transparent;
     color: rgb(255 255 255/var(--tw-text-opacity))
 }
