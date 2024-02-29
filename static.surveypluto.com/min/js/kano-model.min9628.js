@@ -1,1 +1,0 @@
-$(function(){$(".kano-model .landing-page-header-btn,.kano-model .landing-page-btn").on("click",function(){window.location.href="/app/survey/create"})});
