@@ -1,0 +1,1 @@
+$(function(){$(".max-diff .landing-page-header-btn,.max-diff .landing-page-btn").on("click",function(){window.location.href="/app/survey/create"})});
