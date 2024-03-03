@@ -113,8 +113,47 @@
 			<!-- ============================================================== -->
 			
 			<!-- =============================== Dashboard Header ========================== -->
-			<section class="bg-cover position-relative" style="background:red url(assets/img/cover.jpg) no-repeat;" data-overlay="3">
-				<div class="abs-list-sec"><a href="dashboard-add-listing.html" class="add-list-btn"><i class="fas fa-plus me-2"></i>Add Listing</a></div>
+			<style>
+				/* Your existing styles here */
+			
+				@media (max-width: 768px) {
+			
+					.add-list-btn {
+						width: 46%;
+						font-size: 13px;
+						margin: 5px;	 /* Make the buttons take full width on smaller screens */
+					}
+			
+					.dashboard-head-author-clicl {
+						max-width: 100%; /* Adjust the maximum width for smaller screens */
+					}
+					.flex-container{
+						margin-left: 0px;
+					}
+					.add-list-btn.hidden{
+						display: none;
+					}
+					.abs-list-sec{
+						margin-left: 30px;
+					}
+			
+					/* Add any additional styles for smaller screens here */
+				}
+			</style>
+			
+			<!-- =============================== Dashboard Header ========================== -->
+			<section class="bg-cover position-relative" style="background: red url(assets/img/banner-6.jpg) no-repeat;" data-overlay="3">
+				<div class="abs-list-sec">
+					<div class="flex-container">
+						<a href="/survey/index.html" class="add-list-btn  hidden"><i class="fas fa-plus me-2"></i>Create Survey</a>
+						<a href="/poll/strawpoll.com/create/index.html" class="add-list-btn"><i class="fas fa-poll me-2"></i>Create Poll</a>
+						<a href="/Bulk sms/index.html" class="add-list-btn"><i class="fas fa-sms me-2"></i>Send SMS</a>
+						<a href="dashboard-add-listing.html" class="add-list-btn"><i class="fas fa-list me-2"></i>Create Marketting List</a>
+						<a href="dashboard-add-listing.html" class="add-list-btn"><i class="fas fa-shopping-bag me-2"></i>Mystery Shopping  Task</a>
+						<a href="add-listing.html" class="add-list-btn  hidden"><i class="fas fa-plus me-2"></i>Add Listing</a>
+					</div>
+				</div>
+				
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -134,7 +173,7 @@
 										<div class="list-lioe">
 											<div class="list-lioe-single"><span class="ft-medium text-info"><i class="fas fa-check-circle me-1"></i>Claimed</span></div>
 											<div class="list-lioe-single ms-2 ps-3 seperate">
-												<a href="javascript:void(0);" class="text-light ft-medium">Chicken Wings</a>,<a href="javascript:void(0);" class="text-light ft-medium ms-1">Sports</a>
+												<a href="javascript:void(0);" class="text-light ft-medium">Chicken | Wings</a>|<a href="javascript:void(0);" class="text-light ft-medium ms-1">| Sports</a>
 											</div>
 										</div>
 									</div>
@@ -143,7 +182,7 @@
 						</div>
 					</div>
 				</div>
-				<br><br>
+				<br><br><br><br><br>
 			</section>
 			<!-- =============================== Dashboard Header ========================== -->
 			
@@ -226,9 +265,33 @@
 														<label class="mb-1">Business Name</label>
 														<input type="text" class="form-control rounded" placeholder="Decathlon Sport House" />
 													</div>
+													<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+														<div class="form-group">
+															<label class="mb-1">Keywords</label>
+															<input type="text" class="form-control rounded" placeholder="Type keywords by comma's" />
+														</div>
+													</div>
 												</div>
-												<div style="display: flex; width: 50%;gap: 10px;" class="cats">
-													<div style="width: 100%;" class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+
+												<style>
+													/* Default styles for all screens */
+
+													/* Media query for large screens */
+													@media screen and (min-width: 1200px) {
+													/* Styles for large screens go here */
+													.cat {
+														width: 66%;
+														display:flex;
+														gap: 11px;
+														
+													}
+													/* Add more styles for large screens as needed */
+													}
+
+												</style>
+
+												<div class="cat">
+													<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
 														<div class="form-group">
 															<label class="mb-1">Categories</label>
 															<select class="form-control">
@@ -458,6 +521,11 @@
 															<option>Others</option>
 														</select>
 
+													</div>
+												</div>
+												<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+													<div class="form-group">
+														<button type="button" class="btn theme-cl rounded theme-bg-light ft-medium ">Add More</button>
 													</div>
 												</div>
 											</div>
