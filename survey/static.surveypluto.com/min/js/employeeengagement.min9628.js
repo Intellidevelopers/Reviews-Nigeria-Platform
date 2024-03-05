@@ -1,1 +1,0 @@
-$(function(){$(".employee-engagement .landing-page-header-btn,.employee-engagement .landing-page-btn").on("click",function(){window.location.href="/app/survey/create"})});
