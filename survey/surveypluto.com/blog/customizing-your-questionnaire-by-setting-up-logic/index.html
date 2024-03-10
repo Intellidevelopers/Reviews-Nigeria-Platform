@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from surveypluto.com/blog/customizing-your-questionnaire-by-setting-up-logic/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Feb 2024 21:16:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://static.surveypluto.com/favicon.ico" type="image/x-icon">
+<link rel="dns-prefetch" href="http://static.surveypluto.com/" />
+<title data-rh="true">Customizing Your Questionnaire by Setting Up Logic | SurveyPluto</title>
+<meta data-rh="true" name="description" content="Customizing your questionnaire with conditional logic ensures efficient and effective data collection to meet your needs. | SurveyPluto" />
+<meta data-rh="true" name="keywords" content="questionnaire logic, skip logic, branching, conditional logic, free survey,online survey" />
+<link data-rh="true" href="../../feed/index.html" rel="alternate" title="SurveyPluto Feed" type="application/rss+xml" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="SurveyPluto" />
+<meta property="og:title" content="Customizing Your Questionnaire by Setting Up Logic | SurveyPluto" />
+<meta property="og:description" content="Customizing your questionnaire with conditional logic ensures efficient and effective data collection to meet your needs. | SurveyPluto" />
+<meta property="og:url" content="index.html" />
+<meta property="og:image" content="../../../static.surveypluto.com/static/assets/images/surveypluto-blog.png" />
+<meta property="og:image:width" content="1128" />
+<meta property="og:image:height" content="512" />
+<link data-rh="true" rel="canonical" href="index.html" />
+<link data-rh="true" rel="apple-touch-icon" href="../../../static.surveypluto.com/static/assets/images/favicon-192.png" />
+<link data-rh="true" rel="icon" href="../../../static.surveypluto.com/static/assets/images/favicon-32.png" />
+<link data-rh="true" rel="icon" type="image/svg+xml" href="https://static.surveypluto.com/static/assets/images/favicon.svg" color="#00bf6f" />
+<link data-rh="true" rel="manifest" href="https://static.surveypluto.com/static/assets/images/manifest.webmanifest" />
+<meta name="language" content="en-us" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="stylesheet" href="../../../static.surveypluto.com/min/css/pagecommon.min9628.css?v=202402221645" /> <link rel="stylesheet" href="../../../static.surveypluto.com/min/css/iconfont.min9628.css?v=202402221645" />
+<script src="../../../cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" type="b969f1c40a8499be603cbec3-text/javascript"></script>
+<script type="b969f1c40a8499be603cbec3-text/javascript">
+        !window.jQuery && document.write('<script src="../../../static.surveypluto.com/static/js/jquery-1.11.3.min.js"><\/script>');
+    </script>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<script type="b969f1c40a8499be603cbec3-text/javascript">
+        var host_closeapi = 'https://closeapi.surveypluto.com/';
+    </script>
+<script src="../../../static.surveypluto.com/min/js/pagecommon.min9628.js?v=202402221645" type="b969f1c40a8499be603cbec3-text/javascript"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MTXX6DH399" type="b969f1c40a8499be603cbec3-text/javascript">
+    </script>
+<script type="b969f1c40a8499be603cbec3-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MTXX6DH399');
+    </script>
+</head>
+<body>
+<header>
+<nav class="pluto-top-nav">
+<div class="nav-left">
+<img decoding="async" loading="eager" alt="SurveyPluto logo" src="../../../static.surveypluto.com/static/assets/images/logo.png" />
+<h3>SurveyPluto</h3>
+</div>
+<div class="pluto-nav-tabs">
+Products
+<img decoding="async" loading="eager" alt="dropdown" src="../../../static.surveypluto.com/static/assets/images/dropdown.png" />
+<div class="nav-menu" style="left: -236px;">
+<div class="nav-menu-content nav-menu-products">
+<div class="nav-menu-content-left" style="width: 220px;">
+<a class="nav-menu-a" name="survey-software" href="../../survey-software/index.html">Classic Survey</a>
+<a class="nav-menu-a" name="registration-form" href="../../registration-form/index.html">Registration Form</a>
+<a class="nav-menu-a" name="poll" href="../../poll/index.html">Online Poll</a>
+</div>
+<div class="nav-menu-content-left">
+<a class="nav-menu-a" name="employee-satisfaction-survey" href="../../employee-satisfaction-survey/index.html">Employee Satisfaction Survey</a>
+<a class="nav-menu-a" name="customer-satisfaction-survey" href="../../customer-satisfaction-survey/index.html">Customer Satisfaction Survey</a>
+<a class="nav-menu-a" name="employee-engagement-survey" href="../../employee-engagement-survey/index.html">Employee Engagement Survey</a>
+<a class="nav-menu-a" name="customer-journey" href="../../customer-journey/index.html">Customer Journey</a>
+<a class="nav-menu-a" name="nps-survey" href="../../nps-survey/index.html">NPS Survey</a>
+</div>
+<div class="nav-menu-content-right">
+<a class="nav-menu-a" name="max-diff" href="../../max-diff/index.html">MaxDiff</a>
+<a class="nav-menu-a" name="conjoint-analysis" href="../../conjoint-analysis/index.html">Conjoint Analysis</a>
+<a class="nav-menu-a" name="kano-model" href="../../kano-model/index.html">KANO</a>
+<a class="nav-menu-a" name="psm-model" href="../../psm-model/index.html">PSM</a>
+<a class="nav-menu-a" name="product-concept-testing" href="../../product-concept-testing/index.html">Product Concept Testing</a>
+<a class="nav-menu-a" name="product-comparison-testing" href="../../product-comparison-testing/index.html">Product Comparison Test</a>
+</div>
+</div>
+</div>
+</div>
+<div class="pluto-nav-tabs" style="margin-right:62px;">
+<a class="nav-menu-a" style="text-decoration: none !important;font-size: 1rem;font-family: PingFangSC-Regular, PingFang SC;color: #024025;" name="templates" href="../../templates/index.html">Templates</a>
+</div>
+<div class="pluto-nav-tabs">
+Resources
+<img decoding="async" loading="eager" alt="dropdown" src="../../../static.surveypluto.com/static/assets/images/dropdown.png" />
+<div class="nav-menu nav-menu-other" style="width: 150px;">
+<div class="nav-menu-content-1">
+<a class="nav-menu-a" name="blog" href="../index.html">Blog</a>
+<a class="nav-menu-a" name="help" href="../../help/index.html">Help Center</a>
+</div>
+</div>
+</div>
+<div class="pluto-nav-tabs">
+Company
+<img decoding="async" loading="eager" alt="dropdown" src="../../../static.surveypluto.com/static/assets/images/dropdown.png" />
+<div class="nav-menu nav-menu-other">
+<div class="nav-menu-content-1">
+<a class="nav-menu-a" name="aboutus" href="../../aboutus/index.html">About Us</a>
+<a class="nav-menu-a" name="contactus" href="../../contactus/index.html">Contact Us</a>
+</div>
+</div>
+</div>
+<div class="nav-right">
+<a class="login-text login-btn" href="../../app/login.html">Log in</a>
+<div class="sign-btn" onclick="if (!window.__cfRLUnblockHandlers) return false; location.href='../../app/survey/create.html'" data-cf-modified-b969f1c40a8499be603cbec3->Sign up free</div>
+<img decoding="async" loading="eager" alt="default avatar" class="nav-avatar" src="../../../static.surveypluto.com/static/assets/images/avatar.png" />
+<a class="login-text nav-userName" style href="../../app/login.html"></a>
+</div>
+<div class="nav-right-mb" onclick="if (!window.__cfRLUnblockHandlers) return false; showMbNav()" data-cf-modified-b969f1c40a8499be603cbec3->
+<i class="SurveyPlutoIcon survey-pluto-list"></i>
+</div>
+</nav>
+</header>
+<div>
+<main role="main">
+<script src="../../../static.surveypluto.com/static/assets/js/blog-article2c13.js?t=202402221645" defer type="b969f1c40a8499be603cbec3-text/javascript"></script>
+<link rel="stylesheet" href="../../../static.surveypluto.com/min/css/blog-article.min9628.css?v=202402221645" /> <div class="bd_nac">
+<a class="goback flx-align-center" href="../index.html">
+<img decoding="async" loading="eager" style="width:12px;vertical-align:middle;margin-bottom: 2px;" src="../../../static.surveypluto.com/static/assets/images/common/back.png" alt="back to blog home" />
+Back to Blog Home
+</a>
+<ul style="margin-top:22px;">
+</ul>
+</div>
+<div id="bd_main">
+<div class="bd_cont w">
+<h1>Customizing Your Questionnaire by Setting Up Logic</h1>
+<div class="author_div">
+<div class="tx"></div>
+<span class="bd_name">SurveyPluto</span>
+<span class="bd_date">11/03/2023</span>
+<span class="bd_word">664 words</span>
+</div>
+<div class="bd_desc">
+<p><img src="../../../osspublic.surveypluto.com/system/blog/16989749472381698974947D4Gxpx.jpg" data-filename="/" style="width: 743px;"><span style="font-family: Arial;" alt="Customizing Your Questionnaire By Setting Up Logic">﻿</span></p><p>Setting up logic in a survey, often referred to as branching or skip logic, allows you to customize the flow of questions based on respondents' answers. This can help make the survey more relevant and engaging for participants. Here's how you can set up logic for a survey:</p><p>&nbsp;</p><h3>1. Determine the Branching Paths</h3><p><br></p><p>Determining which questions will be used as the basis for branching is a crucial step in the survey design process. These questions should guide the flow of the survey and help to ensure that respondents are only presented with questions that are relevant to their situation. To identify these questions, you'll need to consider the survey goals, as well as the information that you want to collect.</p><p><br></p><p>The basis for branching can vary depending on the specific survey. For example, you might want to show different follow-up questions to respondents who answer positively compared to those who answer negatively. This could be used to probe further into the reasoning behind the respondent's answer, or to ask additional questions about specific aspects of their response. You could also use branching to determine which questions to ask based on a respondent's demographic information or other relevant characteristics.</p><p>&nbsp;</p><h3>2. Add Conditional Logic</h3><p><br></p><p>For each question that will lead to branching, set up conditions based on the response options. These conditions determine where respondents will be directed next. Assign specific actions for each condition. These actions can include skipping to a certain question, showing a specific questions, or ending the survey.</p><p><br></p><p>Think through all possible scenarios for each question. Make sure you have conditions set up for every response option to avoid unintended skips or errors. If a respondent does not meet any specific conditions, provide a default path for them to follow. This could be a general follow-up question or a redirect to a later section of the survey.</p><p><br></p><p>While branching can provide a customized experience, be cautious not to make the survey too complex or long, as this could lead to respondent fatigue and lower completion rates.</p><p><br></p><h3>3. Test the Logic</h3><p><br></p><p>Before deploying a survey with branching logic, it is important to thoroughly test the logic to ensure that it is functioning correctly. By doing so, you can identify and fix any issues, ensuring that respondents are directed to the correct questions and that the survey flows smoothly.</p><p><br></p><p>Testing the logic involves simulating the survey experience to ensure that respondents are directed to the appropriate questions based on their previous answers. You can do this by testing the survey with a small group of colleagues or friends who can provide feedback on the survey design and content. This group should be representative of your target audience, and should include individuals who have different levels of familiarity with the survey topic.</p><p><br></p><h3>4. Iterate and Improve</h3><p><br></p><p>After collecting responses to a survey with branching logic, it is important to analyze the data and the survey's effectiveness. This analysis will provide insights into the effectiveness of the survey, as well as help identify areas for improvement. You can use this feedback to refine your survey logic for future iterations, improving the quality of the data collected and ensuring higher participant engagement.</p><p><br></p><p><br></p><h3>Conclusion</h3><p><br></p><p>Customizing your questionnaire by setting up conditional logic can greatly improve the quality and effectiveness of your survey. With conditional logic, you can tailor your questions based on the responses of the participant, making the survey more engaging and relevant to their specific needs and preferences. However, it is important to thoroughly test the logic of the survey before deployment, to ensure that respondents are being directed to the correct questions and that the survey flows smoothly. After collecting responses, analyzing the data and feedback can help you identify areas for improvement, allowing you to refine your survey logic for future iterations and ultimately improve the quality of the data collected. By setting up logic in your survey design, you can gain valuable insights into your target audience and make more informed business decisions.</p><p><br></p>
+</div>
+</div>
+</div>
+<div style="background:#f7f7f7;padding:40px 0 100px;">
+<p style="font-size: 16px; color: #BFBFBF;text-align:center;margin-bottom:40px;">—— You might also like ——</p>
+<div class="blog_cont w">
+<a class="blog_item" href="../optimizing-customer-journey-to-enhance-customer-experience/index.html" data-type="Customer" id="optimizing-customer-journey-to-enhance-customer-experience">
+<img decoding="async" loading="eager" src="../../../osspublic.surveypluto.com/system/blog/17006340918041700634091dH7dBd.jpg" alt="blog preview image" />
+<div class="blog_wrap">
+<div class="blog_name">Optimizing Customer Journeys: Enhancing Every Touchpoint for a Better Experience</div>
+<div class="blog_other" style="overflow:hidden">
+<span class="word fl">624 Words</span>
+<span class="date fr">11/22/2023</span>
+</div>
+</div>
+</a>
+<a class="blog_item" href="../upgrade-your-surveys-with-these-effective-likert-scale-examples/index.html" data-type="General" id="upgrade-your-surveys-with-these-effective-likert-scale-examples">
+<img decoding="async" loading="eager" src="../../../osspublic.surveypluto.com/system/blog/17000357192041700035719YM8yCa.jpg" alt="blog preview image" />
+<div class="blog_wrap">
+<div class="blog_name">Upgrade Your Surveys with These Effective Likert Scale Examples</div>
+<div class="blog_other" style="overflow:hidden">
+<span class="word fl">585 Words</span>
+<span class="date fr">11/15/2023</span>
+</div>
+</div>
+</a>
+<a class="blog_item" href="../market-research-questionnaire/index.html" data-type="Market" id="market-research-questionnaire">
+<img decoding="async" loading="eager" src="../../../osspublic.surveypluto.com/system/blog/16988870444241698887044YRYjdb.png" alt="blog preview image" />
+<div class="blog_wrap">
+<div class="blog_name">Market Research Questionnaire: Examples of Effective Questions to Gather Valuable Insights</div>
+<div class="blog_other" style="overflow:hidden">
+<span class="word fl">456 Words</span>
+<span class="date fr">11/02/2023</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</main>
+</div>
+
+<div class="Feedback">
+<a href="../../q/76KogblY5.html" target="_blank" class="feedback-btn flx-center">
+<i class="SurveyPlutoIcon survey-pluto-Feedback-fill"></i>
+<span>Feedback</span>
+</a>
+<div class="feedback-btn flx-center feedback-contact-btn">
+<i class="SurveyPlutoIcon survey-pluto-ContactUs-fill"></i>
+<span>Contact Us</span>
+</div>
+</div>
+<div class="contact-us-dialog">
+<div class="contact-us-dialog-content">
+<div class="contact-us-dialog-title">
+<span>Contact Us</span>
+<i class="SurveyPlutoIcon survey-pluto-cancel" onclick="if (!window.__cfRLUnblockHandlers) return false; hideContactUsDialog()" data-cf-modified-b969f1c40a8499be603cbec3-></i>
+</div>
+<div class="contact-us-dialog-body">
+<p>If you encounter any problems, you can contact us through the following ways and we will help you solve them as soon as possible.</p>
+<div class="contact-us-email">
+<i class="SurveyPlutoIcon survey-pluto-email-fill"></i>
+<span><a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="2d5e585d5d425f596d5e585f5b48545d41585942034e4240">[email&#160;protected]</a></span>
+</div>
+<div class="contact-us-okay-btn">
+<span onclick="if (!window.__cfRLUnblockHandlers) return false; hideContactUsDialog()" data-cf-modified-b969f1c40a8499be603cbec3->Okay</span>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="part6">
+<div class="part6-div" style="align-items:start">
+<div class="part6-div-title">Product</div>
+<div style="display: flex;flex-wrap:wrap;flex:1;">
+<a href="../../survey-software/index.html">Classic Survey</a>
+<a href="../../registration-form/index.html">Registration Form</a>
+<a href="../../poll/index.html">Online Poll</a>
+<a href="../../employee-satisfaction-survey/index.html">Employee Satisfaction Survey</a>
+<a href="../../customer-satisfaction-survey/index.html">Customer Satisfaction Survey</a>
+<a href="../../employee-engagement-survey/index.html">Employee Engagement Survey</a>
+<a href="../../customer-journey/index.html">Customer Journey</a>
+<a href="../../nps-survey/index.html">NPS Survey</a>
+</div>
+</div>
+<div class="part6-div">
+<div class="part6-div-title">Resources</div>
+<a href="../index.html">Blog</a>
+<a href="../../help/index.html">Help Center</a>
+</div>
+<div class="part6-div" style="margin-bottom: 0">
+<div class="part6-div-title">Company</div>
+<a href="../../aboutus/index.html">About Us</a>
+<a href="../../contactus/index.html">Contact Us</a>
+</div>
+</div>
+<div class="part7">
+<div class="part7-content">
+<img decoding="async" loading="eager" alt="SurveyPluto logo" src="../../../static.surveypluto.com/static/assets/images/logo.png" />
+<a href="../../legal/terms-of-use/index.html" target="_blank">Terms of Use</a>
+<a href="../../legal/privacy-notice/index.html" target="_blank">Privacy Notice</a>
+<a href="../../legal/general-data-protection-regulation/index.html" target="_blank">GDPR Compliance</a>
+<a href="../../legal/cookie-notice/index.html" target="_blank">Cookies Notice</a>
+<span class="copyright">©️2023 Survey Pluto</span>
+</div>
+</div>
+</footer>
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="b969f1c40a8499be603cbec3-|49" defer></script></body>
+
+<!-- Mirrored from surveypluto.com/blog/customizing-your-questionnaire-by-setting-up-logic/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Feb 2024 21:16:19 GMT -->
+</html>
