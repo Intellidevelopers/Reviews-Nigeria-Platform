@@ -1,0 +1,1 @@
+$(function(){$(".conjoint-analysis .landing-page-header-btn,.conjoint-analysis .landing-page-btn").on("click",function(){window.location.href="/app/survey/create"})});

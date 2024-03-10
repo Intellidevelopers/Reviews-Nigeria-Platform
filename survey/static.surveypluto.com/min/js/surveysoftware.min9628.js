@@ -1,0 +1,1 @@
+$(function(){$(".survey-software .landing-page-header-btn,.survey-software .landing-page-btn").on("click",function(){window.location.href="/app/survey/create"})});
