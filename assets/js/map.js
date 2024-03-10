@@ -163,8 +163,8 @@ function hideAllMarkers() {
     for (var o in markers)
         markers[o].forEach(function (o) {
             o.setMap(null);
-        });
-}
+        });h 
+}n
 function closeInfoBox() {
     $("div.infoBox").remove();
 }
