@@ -1,1 +1,0 @@
-$(function(){$(".registration-form .landing-page-header-btn,.registration-form .landing-page-btn").on("click",function(){window.location.href="/app/survey/create"})});

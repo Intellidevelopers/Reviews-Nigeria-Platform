@@ -1,1 +1,0 @@
-$(function(){$(".psm-model .landing-page-header-btn,.psm-model .landing-page-btn").on("click",function(){window.location.href="/app/survey/create"})});
