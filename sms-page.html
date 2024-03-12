@@ -235,34 +235,73 @@
 						<div class="row">
 							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
 								<div class="dsd-boxed-widget py-5 px-4 bg-danger rounded">
-									<h2 class="ft-medium mb-1 fs-xl text-light count">46</h2>
-									<p class="p-0 m-0 text-light fs-md">Active Listings</p>
+									<h2 class="ft-medium mb-1 fs-xl text-light count">460.00</h2>
+									<p class="p-0 m-0 text-light fs-md">Unit Balance</p>
 									<i class="lni lni-empty-file"></i>
 								</div>
 							</div>
 							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
 								<div class="dsd-boxed-widget py-5 px-4 bg-success rounded">
 									<h2 class="ft-medium mb-1 fs-xl text-light count">2615</h2>
-									<p class="p-0 m-0 text-light fs-md">Views Listing</p>
+									<p class="p-0 m-0 text-light fs-md">Free SMS Unit Available</p>
 									<i class="lni lni-eye"></i>
 								</div>
 							</div>
 							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
 								<div class="dsd-boxed-widget py-5 px-4 bg-warning rounded">
 									<h2 class="ft-medium mb-1 fs-xl text-light count">312</h2>
-									<p class="p-0 m-0 text-light fs-md">Total Reviews</p>
+									<p class="p-0 m-0 text-light fs-md">Last Message Sent</p>
 									<i class="lni lni-comments"></i>
 								</div>
 							</div>
 							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
 								<div class="dsd-boxed-widget py-5 px-4 bg-purple rounded">
 									<h2 class="ft-medium mb-1 fs-xl text-light count">410</h2>
-									<p class="p-0 m-0 text-light fs-md">Total Bookings</p>
+									<p class="p-0 m-0 text-light fs-md">Total Sms Sent</p>
 									<i class="lni lni-wallet"></i>
 								</div>
 							</div>
 						</div>
-						
+                        <style>
+                            body {
+                              font-family: Arial, sans-serif;
+                              margin: 0;
+                              padding: 0;
+                              background-color: #f4f4f4;
+                            }
+                        
+                            .dashboard {
+                              max-width: 1200px;
+                              margin: 20px auto;
+                              display: flex;
+                              flex-wrap: wrap;
+                              justify-content: space-between;
+                            }
+                        
+                            .card {
+                              width: 30%;
+                              background-color: #fff;
+                              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                              margin-bottom: 20px;
+                              padding: 20px;
+                              box-sizing: border-box;
+                            }
+                        
+                            .card h2 {
+                              margin-top: 0;
+                            }
+                            button{
+                                padding: 10px;
+                                border: none;
+                                background-color: rgb(146, 0, 0);
+                                color: white;
+                                border-radius: 5px;
+                            }
+                            .blk{
+                                font-size: 18px;
+                            }
+                            /* Add your additional styling here */
+                          </style>
 						<!-- row -->
 						<div class="row">
 						
@@ -273,7 +312,31 @@
 										<h4 class="mb-0">View Chart</h4>
 									</div>
 									<div class="dash-card-body">
-										<div class="chart" id="revenue-chart" style="height:365px;"></div>
+										<div class="dashboard">
+                                            <!-- Card 1 -->
+                                            <div class="card">
+                                              <h2><i class="fa fa-sms"></i></h2>
+                                              <p class="blk">Send Message</p>
+                                              <button>Continue <i class="fa fa-arrow-rotate-right"></i></button>
+                                            </div>
+                                          
+                                            <!-- Card 2 -->
+                                            <div class="card">
+                                              <h2>Card 2</h2>
+                                              <p class="blk">This is the content of card 2.</p>
+                                              <button>Button 2</button>
+                                            </div>
+                                          
+                                            <!-- Card 3 -->
+                                            <div class="card">
+                                              <h2>Card 3</h2>
+                                              <p class="blk">This is the content of card 3.</p>
+                                              <button>Button 3</button>
+                                            </div>
+                                          
+                                            <!-- Repeat the structure for more cards -->
+                                          
+                                          </div>
 									</div>
 								</div>
 							</div>

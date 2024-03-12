@@ -3,114 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Poll Form</title>
+  <title>Simple Dashboard</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
     }
 
-    label {
-      margin-bottom: 8px;
-      display: block;
-    }
-
-    select, input[type="checkbox"] {
-      margin-bottom: 16px;
-    }
-
-    .poll-form {
-      display: none;
-    }
-
-    .toggle-buttons {
+    .dashboard {
+      max-width: 1200px;
+      margin: 20px auto;
       display: flex;
-      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
-    .toggle-buttons label {
-      display: flex;
-      align-items: center;
+    .card {
+      width: 30%;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+      box-sizing: border-box;
     }
 
-    .toggle-buttons input {
-      margin-right: 5px;
+    .card h2 {
+      margin-top: 0;
     }
 
-    /* Add your custom styling here */
+    /* Add your additional styling here */
   </style>
 </head>
 <body>
 
-<!-- Poll Type Dropdown -->
-<label for="poll-type">Select Poll Type:</label>
-<select id="poll-type" onchange="showPollForm()">
-  <option value="multiple-choice">Multiple Choice</option>
-  <option value="image-poll">Image Poll</option>
-  <option value="meeting-poll">Meeting Poll</option>
-  <option value="ranking-poll">Ranking Poll</option>
-</select>
+<div class="dashboard">
+  <!-- Card 1 -->
+  <div class="card">
+    <h2>Card 1</h2>
+    <p>This is the content of card 1.</p>
+    <button>Button 1</button>
+  </div>
 
-<!-- Poll Forms -->
-<div id="multiple-choice-form" class="poll-form">
-  <!-- Multiple Choice Poll Form -->
-  <h2>Multiple Choice Poll</h2>
-  <!-- Add your multiple choice poll form elements here -->
+  <!-- Card 2 -->
+  <div class="card">
+    <h2>Card 2</h2>
+    <p>This is the content of card 2.</p>
+    <button>Button 2</button>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <h2>Card 3</h2>
+    <p>This is the content of card 3.</p>
+    <button>Button 3</button>
+  </div>
+
+  <!-- Repeat the structure for more cards -->
+
 </div>
-
-<div id="image-poll-form" class="poll-form">
-  <!-- Image Poll Form -->
-  <h2>Image Poll</h2>
-  <!-- Add your image poll form elements here -->
-</div>
-
-<div id="meeting-poll-form" class="poll-form">
-  <!-- Meeting Poll Form -->
-  <h2>Meeting Poll</h2>
-  <!-- Add your meeting poll form elements here -->
-</div>
-
-<div id="ranking-poll-form" class="poll-form">
-  <!-- Ranking Poll Form -->
-  <h2>Ranking Poll</h2>
-  <!-- Add your ranking poll form elements here -->
-</div>
-
-<!-- Settings Tab -->
-<div id="settings-tab">
-  <h2>Settings</h2>
-  <!-- Add your settings elements here -->
-</div>
-
-<!-- Toggle Buttons -->
-<div class="toggle-buttons">
-  <label for="toggle1">
-    <input type="checkbox" id="toggle1">
-    Toggle 1
-  </label>
-
-  <label for="toggle2">
-    <input type="checkbox" id="toggle2">
-    Toggle 2
-  </label>
-  <!-- Add more toggle buttons as needed -->
-</div>
-
-<script>
-  function showPollForm() {
-    // Hide all poll forms
-    var pollForms = document.querySelectorAll('.poll-form');
-    pollForms.forEach(function(form) {
-      form.style.display = 'none';
-    });
-
-    // Show the selected poll form
-    var selectedPollType = document.getElementById('poll-type').value;
-    var selectedForm = document.getElementById(selectedPollType + '-form');
-    if (selectedForm) {
-      selectedForm.style.display = 'block';
-    }
-  }
-</script>
 
 </body>
 </html>
