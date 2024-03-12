@@ -1,93 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dynamic Form</title>
-<style>
-  #additionalFields {
-    display: none;
-  }
-</style>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poll Form</title>
+  <style>
     body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    form {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      font-family: Arial, sans-serif;
     }
 
     label {
-        display: block;
-        margin-bottom: 8px;
+      margin-bottom: 8px;
+      display: block;
     }
 
-    input {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 16px;
-        box-sizing: border-box;
+    select, input[type="checkbox"] {
+      margin-bottom: 16px;
     }
 
-    button {
-        padding: 10px;
-        background-color: #4caf50;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
+    .poll-form {
+      display: none;
     }
 
-    button:hover {
-        background-color: #45a049;
+    .toggle-buttons {
+      display: flex;
+      gap: 10px;
     }
 
-    .hidden {
-        display: none;
+    .toggle-buttons label {
+      display: flex;
+      align-items: center;
     }
-</style>
+
+    .toggle-buttons input {
+      margin-right: 5px;
+    }
+
+    /* Add your custom styling here */
+  </style>
 </head>
 <body>
-  <form id="mainForm">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    
-    <div id="additionalFields">
-      <label for="phone">Phone:</label>
-      <input type="text" id="phone" name="phone"><br><br>
-      
-      <label for="address">Address:</label>
-      <input type="text" id="address" name="address"><br><br>
-    </div>
-    
-    <button type="button" onclick="toggleAdditionalFields()">Show More Fields</button><br><br>
-    
-    <input type="submit" value="Submit">
-  </form>
 
-  <script>
-    function toggleAdditionalFields() {
-      var additionalFields = document.getElementById("additionalFields");
-      if (additionalFields.style.display === "none") {
-        additionalFields.style.display = "block";
-      } else {
-        additionalFields.style.display = "none";
-      }
+<!-- Poll Type Dropdown -->
+<label for="poll-type">Select Poll Type:</label>
+<select id="poll-type" onchange="showPollForm()">
+  <option value="multiple-choice">Multiple Choice</option>
+  <option value="image-poll">Image Poll</option>
+  <option value="meeting-poll">Meeting Poll</option>
+  <option value="ranking-poll">Ranking Poll</option>
+</select>
+
+<!-- Poll Forms -->
+<div id="multiple-choice-form" class="poll-form">
+  <!-- Multiple Choice Poll Form -->
+  <h2>Multiple Choice Poll</h2>
+  <!-- Add your multiple choice poll form elements here -->
+</div>
+
+<div id="image-poll-form" class="poll-form">
+  <!-- Image Poll Form -->
+  <h2>Image Poll</h2>
+  <!-- Add your image poll form elements here -->
+</div>
+
+<div id="meeting-poll-form" class="poll-form">
+  <!-- Meeting Poll Form -->
+  <h2>Meeting Poll</h2>
+  <!-- Add your meeting poll form elements here -->
+</div>
+
+<div id="ranking-poll-form" class="poll-form">
+  <!-- Ranking Poll Form -->
+  <h2>Ranking Poll</h2>
+  <!-- Add your ranking poll form elements here -->
+</div>
+
+<!-- Settings Tab -->
+<div id="settings-tab">
+  <h2>Settings</h2>
+  <!-- Add your settings elements here -->
+</div>
+
+<!-- Toggle Buttons -->
+<div class="toggle-buttons">
+  <label for="toggle1">
+    <input type="checkbox" id="toggle1">
+    Toggle 1
+  </label>
+
+  <label for="toggle2">
+    <input type="checkbox" id="toggle2">
+    Toggle 2
+  </label>
+  <!-- Add more toggle buttons as needed -->
+</div>
+
+<script>
+  function showPollForm() {
+    // Hide all poll forms
+    var pollForms = document.querySelectorAll('.poll-form');
+    pollForms.forEach(function(form) {
+      form.style.display = 'none';
+    });
+
+    // Show the selected poll form
+    var selectedPollType = document.getElementById('poll-type').value;
+    var selectedForm = document.getElementById(selectedPollType + '-form');
+    if (selectedForm) {
+      selectedForm.style.display = 'block';
     }
-  </script>
+  }
+</script>
+
 </body>
 </html>
