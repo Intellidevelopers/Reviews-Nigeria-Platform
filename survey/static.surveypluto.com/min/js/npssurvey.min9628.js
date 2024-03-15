@@ -1,1 +1,0 @@
-$(function(){$(".nps-survey .landing-page-header-btn,.nps-survey .landing-page-btn").on("click",function(){window.location.href="/app/survey/create"})});
